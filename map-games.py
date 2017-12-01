@@ -29,10 +29,11 @@ for x in bm.supported_projections.split('\n'):
 water_frac = {}
 # loop over all projections and calculate water fraction
 for proj in projections:
-    print('Processing the',proj,'projection.')
+    fn = path+proj+'.png'
+    print('Processing {}, saving image to {}'.format(proj,fn))
     # createa a map with desired projection
     if proj=='merc':
-        print('merrrc')
+        # for the mercator projection, take latitude in range [-82,82]
         m=bm.Basemap(llcrnrlat=-82,urcrnrlat=82,llcrnrlon=-180,urcrnrlon=180,
                      projection=proj)
     else:
@@ -51,14 +52,14 @@ for proj in projections:
     # the standard deviation is sqrt(n * p * (1-p))/n
     error_fraction = np.sqrt(fraction_water * (1.0-fraction_water)/nsample)
     water_frac[proj] = [fraction_water, error_fraction]
-    plt.figure()
+    plt.figure(figsize=(12,9))
     m.drawmapboundary(fill_color='#A6CAE0')
-    m.fillcontinents(color='white', alpha=1.)
+    m.fillcontinents(color='white', alpha=1.0)
     plt.savefig(path+proj+'.png',bbox_inches='tight')
     plt.close()
 
 for proj in projections:
-    print('%-33s :  %.5f +- %.5f' % (descriptions[proj],
+    print('%-33s :  %.4f +- %.4f' % (descriptions[proj],
                                     water_frac[proj][0],
                                     water_frac[proj][1]))
 

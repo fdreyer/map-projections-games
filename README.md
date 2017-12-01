@@ -1,5 +1,6 @@
 # map-projections-games
-A few games with different types of projections of world maps.
+
+A few simple games with different types of projections of world maps.
 
 ## Looking at water fractions
 The fraction of earth covered by water is about 71%
