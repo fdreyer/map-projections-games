@@ -9,6 +9,9 @@ A simple question is how does this fraction change when looking at a
 projection of the globe on a 2d map. For example, what is the
 percentage of water in a Mercator map projection?
 
+![Mercator projection](images/merc.png)
+
+
 Here we simply estimate via Monte Carlo the fraction of water using
 python's Basemap.
 
