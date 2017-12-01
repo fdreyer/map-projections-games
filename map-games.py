@@ -57,6 +57,7 @@ for proj in projections:
     plt.figure(figsize=(12,9))
     m.drawmapboundary(fill_color='#A6CAE0')
     m.fillcontinents(color='white', alpha=1.0)
+    plt.title('{} projection'.format(descriptions[proj]), fontsize=20)
     plt.savefig(path+proj+'.png',bbox_inches='tight')
     plt.close()
 
