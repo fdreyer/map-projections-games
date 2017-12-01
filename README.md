@@ -1,20 +1,20 @@
 # map-projections-games
 
-A few simple games with different types of projections of world maps.
+A few simple games with different types of world map projections.
 
 ## Looking at water fractions
 The fraction of earth covered by water is about 71%
-(https://water.usgs.gov/edu/earthhowmuch.html)
+(https://water.usgs.gov/edu/earthhowmuch.html).
 
-A simple question is how does this fraction change when looking at a
-projection of the globe on a 2d map. For example, what is the
-percentage of water in a Mercator map projection?
+A simple question one can ask is how much does this fraction change
+when looking at a projection of the globe on a 2d map. For example,
+what is the percentage of water in a Mercator map projection?
 
-![Mercator projection](images/merc.png)
+![Mercator projection](images/merc.png?raw=true "Mercator projection")
 
 
-Here we simply estimate via Monte Carlo the fraction of water using
-python's Basemap.
+Here we simply estimate via Monte Carlo sampling the fraction of water
+using python's Basemap.
 
 The rundown is:
 

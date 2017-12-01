@@ -42,6 +42,7 @@ for proj in projections:
     xbounds = [m.xmin, m.xmax]
     ybounds = [m.ymin, m.ymax]
     fraction_water = 0.0
+    # take nsample random points uniformly distributed on the map
     for i in range(nsample):
         r = np.random.rand(2)
         x = xbounds[0] + r[0]*(xbounds[1] - xbounds[0])
@@ -52,12 +53,14 @@ for proj in projections:
     # the standard deviation is sqrt(n * p * (1-p))/n
     error_fraction = np.sqrt(fraction_water * (1.0-fraction_water)/nsample)
     water_frac[proj] = [fraction_water, error_fraction]
+    # now save the corresponding image
     plt.figure(figsize=(12,9))
     m.drawmapboundary(fill_color='#A6CAE0')
     m.fillcontinents(color='white', alpha=1.0)
     plt.savefig(path+proj+'.png',bbox_inches='tight')
     plt.close()
 
+# write out the results
 for proj in projections:
     print('%-33s :  %.4f +- %.4f' % (descriptions[proj],
                                     water_frac[proj][0],
