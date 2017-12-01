@@ -54,7 +54,7 @@ for proj in projections:
     error_fraction = np.sqrt(fraction_water * (1.0-fraction_water)/nsample)
     water_frac[proj] = [fraction_water, error_fraction]
     # now save the corresponding image
-    plt.figure(figsize=(12,9))
+    plt.figure(figsize=(10,8))
     m.drawmapboundary(fill_color='#A6CAE0')
     m.fillcontinents(color='white', alpha=1.0)
     plt.title('{} projection'.format(descriptions[proj]), fontsize=20)
