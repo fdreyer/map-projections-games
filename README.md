@@ -20,21 +20,15 @@ The rundown is:
 
 | Projection                        | Fraction | Error  |
 | --------------------------------- | -------- | ------ |
-| Cylindrical Equidistant           |  0.7656  | 0.0019 |
-| Mercator                          |  0.7738  | 0.0019 |
-| Miller Cylindrical                |  0.7950  | 0.0018 |
-| Gall Stereographic Cylindrical    |  0.7862  | 0.0018 |
-| Cylindrical Equal Area            |  0.7420  | 0.0020 |
-| Azimuthal Equidistant             |  0.8726  | 0.0015 |
-| Orthographic                      |  0.7125  | 0.0020 |
-| Geostationary                     |  0.6996  | 0.0021 |
-| Near-Sided Perspective            |  0.6991  | 0.0021 |
-| Sinusoidal                        |  0.8368  | 0.0017 |
-| Mollweide                         |  0.7976  | 0.0018 |
-| Hammer                            |  0.7945  | 0.0018 |
-| Robinson                          |  0.7801  | 0.0019 |
-| Eckert IV                         |  0.7678  | 0.0019 |
-| Kavrayskiy VII                    |  0.7910  | 0.0018 |
-| van der Grinten                   |  0.8421  | 0.0016 |
-| McBryde-Thomas Flat-Polar Quartic |  0.7894  | 0.0018 |
-
+| Cylindrical Equidistant           |  0.7693  | 0.0019	|
+| Mercator                          |  0.7767  | 0.0019	|
+| Miller Cylindrical                |  0.7991  | 0.0018	|
+| Gall Stereographic Cylindrical    |  0.7800  | 0.0019	|
+| Cylindrical Equal Area            |  0.7371  | 0.0020	|
+| Azimuthal Equidistant             |  0.6589  | 0.0021	|
+| Orthographic                      |  0.4977  | 0.0022	|
+| Geostationary                     |  0.7031  | 0.0020	|
+| Near-Sided Perspective            |  0.4842  | 0.0022	|
+| Mollweide                         |  0.5801  | 0.0022	|
+| Hammer                            |  0.5804  | 0.0022	|
+| van der Grinten                   |  0.6307  | 0.0022 |
