@@ -60,7 +60,7 @@ for proj in projections:
         x = xbounds[0] + r[0]*(xbounds[1] - xbounds[0])
         y = ybounds[0] + r[1]*(ybounds[1] - ybounds[0])
         if (invalid_point(x, y, proj, xbounds, ybounds)):
-            ++n_invalid
+            n_invalid+=1
             # plt.plot([x],[y],marker='o',color='r',alpha=0.3)
         elif not m.is_land(x,y):
             fraction_water += 1.0
